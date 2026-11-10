@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ee">
+  <title>Edit project</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23a4472a'/%3E%3Cpath d='M10 25V14a6 6 0 0 1 12 0v11M8 25h16M14 25v-5h4v5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/site.css">
+  <link rel="stylesheet" href="../static/motion.css">
+  <script src="../static/motion.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+ <div class="topbar-inner">
+  <a class="brand" href="home.html"><span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10a7 7 0 0 1 14 0v11M3 21h18M9 21v-6h6v6"/></svg></span>Interior Design Platform</a>
+  <nav aria-label="Main">
+  <a href="search.html">Search projects</a>
+  
+    <a href="portfolio.html" class="active" aria-current="page">My portfolio</a>
+    <a href="company-info-view.html">Company information</a>
+    <a href="designer-profile.html">My profile</a>
+  
+  </nav>
+  
+    <span class="who" title="Rose (Interior Designer)"><span class="avatar " aria-hidden="true">R</span><span class="who-text">Rose<small>Interior Designer</small></span></span>
+    <a class="logout" href="../index.html">Log out</a>
+  
+ </div>
+</header>
+
+<main class="form-page">
+  
+  
+  
+<h1>Edit project</h1>
+
+<form method="post">
+  
+  <label>Title
+    
+      <input name="title" type="text" value="Retro Living Room Renovation" maxlength="100">
+    
+  </label>
+  
+  <label>Description
+    
+      <textarea name="description" rows="4" maxlength="2000">A retro living room for a house, with indoor plants and linen curtains.</textarea>
+    
+  </label>
+  
+  <label>Category
+    
+      <select name="categoryId">
+        <option value="" >No category</option><option value="44" >Art Deco Bathroom</option><option value="43" >Art Deco Bedroom</option><option value="42" >Art Deco Kitchen</option><option value="41" >Art Deco Living Room</option><option value="32" >Bohemian Bathroom</option><option value="31" >Bohemian Bedroom</option><option value="30" >Bohemian Kitchen</option><option value="29" >Bohemian Living Room</option><option value="92" >Classic Bathroom</option><option value="91" >Classic Bedroom</option><option value="90" >Classic Kitchen</option><option value="89" >Classic Living Room</option><option value="36" >Coastal Bathroom</option><option value="35" >Coastal Bedroom</option><option value="34" >Coastal Kitchen</option><option value="33" >Coastal Living Room</option><option value="28" >Contemporary Bathroom</option><option value="27" >Contemporary Bedroom</option><option value="26" >Contemporary Kitchen</option><option value="25" >Contemporary Living Room</option><option value="60" >Eclectic Bathroom</option><option value="59" >Eclectic Bedroom</option><option value="58" >Eclectic Kitchen</option><option value="57" >Eclectic Living Room</option><option value="64" >Farmhouse Bathroom</option><option value="63" >Farmhouse Bedroom</option><option value="62" >Farmhouse Kitchen</option><option value="61" >Farmhouse Living Room</option><option value="12" >Industrial Bathroom</option><option value="11" >Industrial Bedroom</option><option value="10" >Industrial Kitchen</option><option value="9" >Industrial Living Room</option><option value="20" >Japandi Bathroom</option><option value="19" >Japandi Bedroom</option><option value="18" >Japandi Kitchen</option><option value="17" >Japandi Living Room</option><option value="76" >Luxury Bathroom</option><option value="75" >Luxury Bedroom</option><option value="74" >Luxury Kitchen</option><option value="73" >Luxury Living Room</option><option value="24" >Mid-century Bathroom</option><option value="23" >Mid-century Bedroom</option><option value="22" >Mid-century Kitchen</option><option value="21" >Mid-century Living Room</option><option value="16" >Minimalist Bathroom</option><option value="15" >Minimalist Bedroom</option><option value="14" >Minimalist Kitchen</option><option value="13" >Minimalist Living Room</option><option value="4" >Modern Bathroom</option><option value="3" >Modern Bedroom</option><option value="2" >Modern Kitchen</option><option value="1" >Modern Living Room</option><option value="68" >Natural Bathroom</option><option value="67" >Natural Bedroom</option><option value="66" >Natural Kitchen</option><option value="65" >Natural Living Room</option><option value="48" >Nordic Bathroom</option><option value="47" >Nordic Bedroom</option><option value="46" >Nordic Kitchen</option><option value="45" >Nordic Living Room</option><option value="80" >Organic Bathroom</option><option value="79" >Organic Bedroom</option><option value="78" >Organic Kitchen</option><option value="77" >Organic Living Room</option><option value="72" >Retro Bathroom</option><option value="71" >Retro Bedroom</option><option value="70" >Retro Kitchen</option><option value="69" selected>Retro Living Room</option><option value="40" >Rustic Bathroom</option><option value="39" >Rustic Bedroom</option><option value="38" >Rustic Kitchen</option><option value="37" >Rustic Living Room</option><option value="8" >Scandinavian Bathroom</option><option value="7" >Scandinavian Bedroom</option><option value="6" >Scandinavian Kitchen</option><option value="5" >Scandinavian Living Room</option><option value="52" >Traditional Bathroom</option><option value="51" >Traditional Bedroom</option><option value="50" >Traditional Kitchen</option><option value="49" >Traditional Living Room</option><option value="56" >Transitional Bathroom</option><option value="55" >Transitional Bedroom</option><option value="54" >Transitional Kitchen</option><option value="53" >Transitional Living Room</option><option value="88" >Urban Bathroom</option><option value="87" >Urban Bedroom</option><option value="86" >Urban Kitchen</option><option value="85" >Urban Living Room</option><option value="96" >Vintage Bathroom</option><option value="95" >Vintage Bedroom</option><option value="94" >Vintage Kitchen</option><option value="93" >Vintage Living Room</option><option value="100" >Wabi-sabi Bathroom</option><option value="99" >Wabi-sabi Bedroom</option><option value="98" >Wabi-sabi Kitchen</option><option value="97" >Wabi-sabi Living Room</option><option value="84" >Zen Bathroom</option><option value="83" >Zen Bedroom</option><option value="82" >Zen Kitchen</option><option value="81" >Zen Living Room</option>
+      </select>
+    
+  </label>
+  
+  <div class="form-actions">
+    <button type="submit">Save</button>
+    <a class="button secondary" href="portfolio.html">Back to my portfolio</a>
+  </div>
+</form>
+
+</main>
+
+<footer class="footer">
+  <span>Interior Design Platform · CSIT314 group project</span>
+  <span>Room photos: Pexels</span>
+</footer>
+
+
+<div id="pv-bar" style="position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:300;background:#221f1b;color:#fff;font:500 13px Inter,system-ui,sans-serif;
+ padding:8px 10px 8px 16px;border-radius:999px;display:flex;gap:12px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2)">
+ <span>Preview · <b>Interior Designer</b></span><a href="../index.html" style="color:#f0c8b6">All pages</a></div>
+<div id="pv-note" style="position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:300;background:#fff;color:#221f1b;border:1px solid #d8cfc2;
+ font:500 13px Inter,system-ui,sans-serif;padding:10px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:none"></div>
+<script>
+(function(){var n=document.getElementById('pv-note'),t;function say(m){n.textContent=m;n.style.display='block';clearTimeout(t);t=setTimeout(function(){n.style.display='none'},2600)}
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-pv-missing]');if(a){e.preventDefault();say('This page is not in the static preview. Run the app to open it.')}});
+document.addEventListener('submit',function(e){e.preventDefault();say('Static preview: forms do not save anything here. The results are under "Outcome screens" on the All pages list.')});})();
+</script>
+</body>
+</html>

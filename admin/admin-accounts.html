@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ee">
+  <title>User accounts</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23a4472a'/%3E%3Cpath d='M10 25V14a6 6 0 0 1 12 0v11M8 25h16M14 25v-5h4v5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/site.css">
+  <link rel="stylesheet" href="../static/motion.css">
+  <script src="../static/motion.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+ <div class="topbar-inner">
+  <a class="brand" href="home.html"><span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10a7 7 0 0 1 14 0v11M3 21h18M9 21v-6h6v6"/></svg></span>Interior Design Platform</a>
+  <nav aria-label="Main">
+  <a href="search.html">Search projects</a>
+  
+    <a href="admin-accounts.html" class="active" aria-current="page">User accounts</a>
+    <a href="admin-accounts-new.html">Create account</a>
+  
+  </nav>
+  
+    <span class="who" title="admin@demo.com (User Admin)"><span class="avatar " aria-hidden="true">A</span><span class="who-text">admin@demo.com<small>User Admin</small></span></span>
+    <a class="logout" href="../index.html">Log out</a>
+  
+ </div>
+</header>
+
+<main class="">
+  
+  
+  
+<div class="page-head">
+  <div><p class="eyebrow">User Admin</p><h1>User accounts</h1></div>
+  <a class="button" href="admin-accounts-new.html">+ Create user account</a>
+</div>
+<form method="get" class="searchbar" role="search" style="margin-top:0">
+  <label><span class="sr-only">Search by email</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input name="keyword" value="" placeholder="Search by email"></label>
+  <button type="submit">Search</button>
+</form>
+
+
+<p class="count">207 accounts.</p>
+<table>
+  <tr><th>Email</th><th>Name</th><th>Account type</th><th>Status</th></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="admin-accounts-208.html">admin01@example.com</a></div></td><td>admin01@example.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>admin02@example.com</a></div></td><td>admin02@example.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>admin03@example.com</a></div></td><td>admin03@example.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>admin04@example.com</a></div></td><td>admin04@example.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>admin05@example.com</a></div></td><td>admin05@example.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>admin@demo.com</a></div></td><td>admin@demo.com</td>
+      <td><span class="type type-user-admin">User Admin</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer001@example.com</a></div></td><td>Amelia</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">P</span><a href="admin-accounts-105.html">customer002@example.com</a></div></td><td>Peter</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer003@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>customer004@example.com</a></div></td><td>Claire</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer005@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>customer006@example.com</a></div></td><td>Matthew</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer007@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>customer008@example.com</a></div></td><td>Oliver</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer009@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">G</span><a href="#" data-pv-missing>customer010@example.com</a></div></td><td>George</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer011@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">T</span><a href="#" data-pv-missing>customer012@example.com</a></div></td><td>Thomas</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer013@example.com</a></div></td><td>Hannah</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer014@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>customer015@example.com</a></div></td><td>Sophie</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>customer016@example.com</a></div></td><td>Megan</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>customer017@example.com</a></div></td><td>Sophie</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer018@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>customer019@example.com</a></div></td><td>Olivia</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>customer020@example.com</a></div></td><td>William</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer021@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>customer022@example.com</a></div></td><td>David</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer023@example.com</a></div></td><td>Lucy</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>customer024@example.com</a></div></td><td>Claire</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer025@example.com</a></div></td><td>Lucy</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer026@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer027@example.com</a></div></td><td>Luke</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer028@example.com</a></div></td><td>Ethan</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer029@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>customer030@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>customer031@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer032@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>customer033@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>customer034@example.com</a></div></td><td>William</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">G</span><a href="#" data-pv-missing>customer035@example.com</a></div></td><td>Grace</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer036@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer037@example.com</a></div></td><td>Andrew</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer038@example.com</a></div></td><td>Holly</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer040@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer041@example.com</a></div></td><td>Holly</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>customer042@example.com</a></div></td><td>William</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>customer043@example.com</a></div></td><td>Oliver</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>customer044@example.com</a></div></td><td>William</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer045@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer046@example.com</a></div></td><td>Jack</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>customer048@example.com</a></div></td><td>Simon</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>customer049@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer050@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>customer052@example.com</a></div></td><td>Charlie</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer053@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">K</span><a href="#" data-pv-missing>customer054@example.com</a></div></td><td>Kate</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer055@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>customer056@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer057@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer058@example.com</a></div></td><td>Harry</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer059@example.com</a></div></td><td>Emily</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer060@example.com</a></div></td><td>Lily</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer061@example.com</a></div></td><td>Jack</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>customer062@example.com</a></div></td><td>Sarah</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer063@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer064@example.com</a></div></td><td>Amelia</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>customer065@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">K</span><a href="#" data-pv-missing>customer066@example.com</a></div></td><td>Katie</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer067@example.com</a></div></td><td>Luke</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer068@example.com</a></div></td><td>Laura</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">P</span><a href="#" data-pv-missing>customer069@example.com</a></div></td><td>Peter</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">K</span><a href="#" data-pv-missing>customer070@example.com</a></div></td><td>Kate</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer071@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>customer072@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer073@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>customer074@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer075@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">G</span><a href="#" data-pv-missing>customer076@example.com</a></div></td><td>Grace</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer077@example.com</a></div></td><td>Harry</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>customer078@example.com</a></div></td><td>Luke</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">B</span><a href="#" data-pv-missing>customer079@example.com</a></div></td><td>Benjamin</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>customer080@example.com</a></div></td><td>William</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>customer081@example.com</a></div></td><td>Daniel</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer082@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer084@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer085@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">B</span><a href="#" data-pv-missing>customer086@example.com</a></div></td><td>Benjamin</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>customer087@example.com</a></div></td><td>Chloe</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer088@example.com</a></div></td><td>Jack</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer089@example.com</a></div></td><td>James</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>customer090@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>customer091@example.com</a></div></td><td>Ryan</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer092@example.com</a></div></td><td>Holly</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer093@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>customer094@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer095@example.com</a></div></td><td>Ethan</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>customer096@example.com</a></div></td><td>Holly</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer097@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>customer098@example.com</a></div></td><td>Oscar</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">G</span><a href="#" data-pv-missing>customer099@example.com</a></div></td><td>George</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>customer@demo.com</a></div></td><td>Ethan</td>
+      <td><span class="type type-customer">Customer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer001@example.com</a></div></td><td>Luke</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer002@example.com</a></div></td><td>Jessica</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>designer003@example.com</a></div></td><td>William</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer004@example.com</a></div></td><td>Hannah</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer005@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer006@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer007@example.com</a></div></td><td>Samuel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer008@example.com</a></div></td><td>Andrew</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer009@example.com</a></div></td><td>Samuel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer010@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">T</span><a href="#" data-pv-missing>designer011@example.com</a></div></td><td>Thomas</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>designer012@example.com</a></div></td><td>Charlie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>designer013@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer014@example.com</a></div></td><td>Laura</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer015@example.com</a></div></td><td>Simon</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer016@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer017@example.com</a></div></td><td>Rose</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer018@example.com</a></div></td><td>Rose</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">B</span><a href="#" data-pv-missing>designer019@example.com</a></div></td><td>Benjamin</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>designer020@example.com</a></div></td><td>William</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>designer021@example.com</a></div></td><td>Emily</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>designer022@example.com</a></div></td><td>Daniel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer023@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">K</span><a href="#" data-pv-missing>designer024@example.com</a></div></td><td>Katie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">N</span><a href="#" data-pv-missing>designer025@example.com</a></div></td><td>Nathan</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer026@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">K</span><a href="#" data-pv-missing>designer027@example.com</a></div></td><td>Katie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer028@example.com</a></div></td><td>Harry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">B</span><a href="#" data-pv-missing>designer029@example.com</a></div></td><td>Benjamin</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer030@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer031@example.com</a></div></td><td>Amelia</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>designer032@example.com</a></div></td><td>William</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer033@example.com</a></div></td><td>Lily</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer034@example.com</a></div></td><td>Jessica</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer035@example.com</a></div></td><td>Sarah</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer036@example.com</a></div></td><td>Megan</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>designer037@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer038@example.com</a></div></td><td>Jack</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer039@example.com</a></div></td><td>Harry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer040@example.com</a></div></td><td>Lucy</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">P</span><a href="#" data-pv-missing>designer041@example.com</a></div></td><td>Peter</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer042@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer043@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>designer044@example.com</a></div></td><td>William</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer045@example.com</a></div></td><td>Harry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer046@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>designer047@example.com</a></div></td><td>Charlie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer048@example.com</a></div></td><td>Holly</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>designer049@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>designer050@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">N</span><a href="#" data-pv-missing>designer051@example.com</a></div></td><td>Nathan</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">B</span><a href="#" data-pv-missing>designer052@example.com</a></div></td><td>Benjamin</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-suspended">suspended</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer053@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">W</span><a href="#" data-pv-missing>designer054@example.com</a></div></td><td>William</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer055@example.com</a></div></td><td>Rachel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer056@example.com</a></div></td><td>Ryan</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer057@example.com</a></div></td><td>Alice</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">P</span><a href="#" data-pv-missing>designer058@example.com</a></div></td><td>Peter</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer059@example.com</a></div></td><td>Sophie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>designer060@example.com</a></div></td><td>Daniel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">C</span><a href="#" data-pv-missing>designer061@example.com</a></div></td><td>Claire</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer062@example.com</a></div></td><td>Samuel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer063@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer064@example.com</a></div></td><td>Lily</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer065@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>designer066@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer067@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>designer068@example.com</a></div></td><td>David</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer069@example.com</a></div></td><td>Sarah</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer070@example.com</a></div></td><td>Samuel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer071@example.com</a></div></td><td>Lucy</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer072@example.com</a></div></td><td>Jessica</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer073@example.com</a></div></td><td>Sophie</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">T</span><a href="#" data-pv-missing>designer074@example.com</a></div></td><td>Thomas</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>designer075@example.com</a></div></td><td>Emma</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer076@example.com</a></div></td><td>Samuel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">H</span><a href="#" data-pv-missing>designer077@example.com</a></div></td><td>Henry</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>designer078@example.com</a></div></td><td>David</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer079@example.com</a></div></td><td>Andrew</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer080@example.com</a></div></td><td>Andrew</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer081@example.com</a></div></td><td>Amelia</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">P</span><a href="#" data-pv-missing>designer082@example.com</a></div></td><td>Peter</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer083@example.com</a></div></td><td>Amelia</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer084@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">D</span><a href="#" data-pv-missing>designer085@example.com</a></div></td><td>Daniel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>designer086@example.com</a></div></td><td>Olivia</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>designer087@example.com</a></div></td><td>Michael</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer088@example.com</a></div></td><td>Jessica</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer089@example.com</a></div></td><td>Joseph</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer090@example.com</a></div></td><td>Lucy</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">J</span><a href="#" data-pv-missing>designer091@example.com</a></div></td><td>Jack</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">L</span><a href="#" data-pv-missing>designer092@example.com</a></div></td><td>Laura</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">I</span><a href="#" data-pv-missing>designer093@example.com</a></div></td><td>Isabel</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer094@example.com</a></div></td><td>Anna</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer095@example.com</a></div></td><td>Ruby</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">A</span><a href="#" data-pv-missing>designer096@example.com</a></div></td><td>Adam</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">O</span><a href="#" data-pv-missing>designer097@example.com</a></div></td><td>Oliver</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">E</span><a href="#" data-pv-missing>designer098@example.com</a></div></td><td>Ella</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">S</span><a href="#" data-pv-missing>designer099@example.com</a></div></td><td>Simon</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">R</span><a href="#" data-pv-missing>designer@demo.com</a></div></td><td>Rose</td>
+      <td><span class="type type-interior-designer">Interior Designer</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>manager01@example.com</a></div></td><td>manager01@example.com</td>
+      <td><span class="type type-platform-manager">Platform Manager</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>manager02@example.com</a></div></td><td>manager02@example.com</td>
+      <td><span class="type type-platform-manager">Platform Manager</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>manager04@example.com</a></div></td><td>manager04@example.com</td>
+      <td><span class="type type-platform-manager">Platform Manager</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="#" data-pv-missing>manager05@example.com</a></div></td><td>manager05@example.com</td>
+      <td><span class="type type-platform-manager">Platform Manager</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+  <tr><td><div class="cell-user"><span class="avatar " aria-hidden="true">M</span><a href="admin-accounts-3.html">manager@demo.com</a></div></td><td>manager@demo.com</td>
+      <td><span class="type type-platform-manager">Platform Manager</span></td><td><span class="badge badge-active">active</span></td></tr>
+  
+</table>
+
+
+</main>
+
+<footer class="footer">
+  <span>Interior Design Platform · CSIT314 group project</span>
+  <span>Room photos: Pexels</span>
+</footer>
+
+
+<div id="pv-bar" style="position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:300;background:#221f1b;color:#fff;font:500 13px Inter,system-ui,sans-serif;
+ padding:8px 10px 8px 16px;border-radius:999px;display:flex;gap:12px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2)">
+ <span>Preview · <b>User Admin</b></span><a href="../index.html" style="color:#f0c8b6">All pages</a></div>
+<div id="pv-note" style="position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:300;background:#fff;color:#221f1b;border:1px solid #d8cfc2;
+ font:500 13px Inter,system-ui,sans-serif;padding:10px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:none"></div>
+<script>
+(function(){var n=document.getElementById('pv-note'),t;function say(m){n.textContent=m;n.style.display='block';clearTimeout(t);t=setTimeout(function(){n.style.display='none'},2600)}
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-pv-missing]');if(a){e.preventDefault();say('This page is not in the static preview. Run the app to open it.')}});
+document.addEventListener('submit',function(e){e.preventDefault();say('Static preview: forms do not save anything here. The results are under "Outcome screens" on the All pages list.')});})();
+</script>
+</body>
+</html>
