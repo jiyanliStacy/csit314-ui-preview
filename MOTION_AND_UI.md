@@ -2,17 +2,22 @@
 
 Scope: presentation only. No new features; every link, form and field matches the original 34-user-story build.
 
-## 1. Motion (3 things only)
+## 1. Motion (small and calm)
 
-| Effect | Technique | Where |
+One easing curve (`cubic-bezier(.22,.61,.36,1)`, ease-out with no overshoot) and short durations (0.15 to 0.6 s), so nothing bounces.
+
+| Effect | Technique | File |
 |---|---|---|
-| Page fades in on load (0.25 s) | CSS `@keyframes` + `animation` on `main` | `motion.css` |
-| Cards get a soft shadow on hover | CSS `transition` on `box-shadow` / `border-color` | `site.css`, `motion.css` |
-| Top bar gets a thin shadow after scrolling | 8 lines of JavaScript toggling a class on `scroll` | `motion.js` |
-| Buttons, links, inputs change colour on hover/focus | CSS `transition` (0.15 s) and `:hover` / `:focus` | `site.css` |
+| Page fades in; hero text rises in one after another | CSS `@keyframes` + `animation-delay` | `motion.css` |
+| Cards lift 3 px with a shadow on hover; photo zooms 4 % | CSS `transition` on `transform` / `box-shadow` | `motion.css` |
+| Cards and sections fade up once when scrolled into view | `IntersectionObserver` adds class `in`; CSS does the fade | `motion.js` + `motion.css` |
+| Buttons lift 1 px on hover; nav links get a growing underline | CSS `transition`, `::after` pseudo-element | `motion.css` |
+| Top bar shadow after scrolling | `scroll` listener toggles a class | `motion.js` |
+| Colour change on hover / focus for links and inputs | CSS `transition` (0.15 s) | `site.css` |
 
-- No JavaScript animation libraries, no animation loop, nothing bounces, scales or follows the mouse.
-- `prefers-reduced-motion: reduce` switches all animation and transitions off (accessibility).
+- Only `transform` and `opacity` are animated, which the browser can run smoothly on the GPU.
+- No animation libraries and no animation loop.
+- `prefers-reduced-motion: reduce` turns every animation and transition off (accessibility).
 
 ## 2. Layout and look
 
