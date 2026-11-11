@@ -1,62 +1,23 @@
-/* Motion layer for the Interior Design Platform.
-   Loaded after the base styles. Anything that moves is in this file, and all of it is switched off
-   for people who ask their system for reduced motion (see the end of the file). */
+/* Motion for the Interior Design Platform: kept deliberately small.
+   Only three things move besides normal hover/focus colour changes (those live in site.css):
+   1. the page content fades in once when a page loads
+   2. cards get a soft shadow on hover
+   3. the top bar gets a thin shadow after the page is scrolled
+   Everything is switched off for people who ask their system for reduced motion. */
 
-/* ---------- page-to-page transitions (View Transitions API; browsers without it just load the page) */
-@media (prefers-reduced-motion: no-preference) {
-  @view-transition { navigation: auto; }
-  ::view-transition-old(root) { animation: vt-out 220ms cubic-bezier(.4, 0, 1, 1) both; }
-  ::view-transition-new(root) { animation: vt-in 420ms cubic-bezier(.16, 1, .3, 1) both; }
-  ::view-transition-group(*) { animation-duration: 560ms; animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
-}
-.topbar { view-transition-name: topbar; }          /* top bar stays still while the page changes */
-@keyframes vt-out { to { opacity: 0; transform: translateY(-6px); } }
-@keyframes vt-in  { from { opacity: 0; transform: translateY(10px); } }
+/* 1. page load: a short fade, CSS only (no JavaScript) */
+@keyframes page-in { from { opacity: 0; } to { opacity: 1; } }
+main { animation: page-in .25s ease-out both; }
 
-/* ---------- depth inside the illustrated covers: window and furniture move at different speeds */
-.cover { --mx: 0; --my: 0; }
-.cover-window { translate: calc(var(--mx) * -7px) calc(var(--my) * -5px); }
-.cover-floor  { translate: calc(var(--mx) * 3px) 0; }
-.cover-icon   { translate: calc(var(--mx) * 12px) calc(var(--my) * 6px); }
-.cover-photo  { scale: 1.06; translate: calc(var(--mx) * -8px) calc(var(--my) * -6px); }   /* the photo drifts like a camera */
-.collage .cover { translate: calc(var(--hx, 0) * var(--d, 10px)) calc(var(--hy, 0) * var(--d, 10px)); }
-.collage .cover:nth-child(1) { --d: -10px; }
-.collage .cover:nth-child(2) { --d: 16px; }
-.collage .cover:nth-child(3) { --d: 24px; }
+/* 2. cards: shadow and border change on hover, nothing shifts or scales */
+.result { transition: box-shadow .2s ease, border-color .2s ease; }
+.result:hover { transform: none; }
 
-/* ---------- hovering one card quietly steps the others back */
-.results:has(.result:hover) .result:not(:hover) { opacity: .72; }
-.result { transition: box-shadow .35s, transform .45s cubic-bezier(.16,1,.3,1), border-color .25s, opacity .35s; }
+/* 3. top bar: shadow added by motion.js when scrollY > 8 */
+.topbar { transition: box-shadow .2s ease; }
+.topbar.scrolled { box-shadow: 0 2px 10px rgba(34, 31, 27, 0.08); }
 
-/* ---------- sliding highlight behind the top-bar links */
-.topbar nav { position: relative; }
-.nav-pill { position: absolute; left: 0; top: 0; height: 0; border-radius: 999px; background: var(--sand); z-index: -1; opacity: 0;
-            transition: transform .45s cubic-bezier(.16,1,.3,1), width .45s cubic-bezier(.16,1,.3,1), height .2s, opacity .25s; }
-.topbar nav.pill-on .nav-pill { opacity: 1; }
-.topbar nav.pill-on a:hover { background: transparent; }
-.topbar { transition: box-shadow .3s, background-color .3s; }
-.topbar.scrolled { box-shadow: 0 6px 24px rgba(34,31,27,0.06); }
-
-/* ---------- things that ease in as they scroll into view (class added by motion.js only) */
-.reveal { opacity: 0; transform: translateY(18px); }
-.reveal.in { opacity: 1; transform: none; transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);
-             transition-delay: calc(var(--i, 0) * 55ms); }
-.result.reveal.in { transition: opacity .7s cubic-bezier(.16,1,.3,1) calc(var(--i, 0) * 55ms), transform .8s cubic-bezier(.16,1,.3,1) calc(var(--i, 0) * 55ms),
-                                box-shadow .35s, border-color .25s; }
-
-.result.reveal.in:hover { transform: translateY(-4px); }
-
-/* ---------- press feedback */
-.magnetic { will-change: transform; }
-.act { transition: background-color .2s, border-color .2s, color .2s, transform .2s cubic-bezier(.16,1,.3,1); }
-.act:active { transform: scale(.95); }
-.searchbar { transition: border-color .2s, box-shadow .3s, transform .4s cubic-bezier(.16,1,.3,1); }
-.searchbar:focus-within { transform: translateY(-1px); }
-
-/* ---------- reduced motion: keep everything still and instant */
+/* reduced motion: everything instant */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .reveal { opacity: 1; transform: none; }
-  .cover-window, .cover-floor, .cover-icon, .cover-photo, .collage .cover { translate: none; }
-  .result:hover, .result:hover .cover { transform: none; }
 }

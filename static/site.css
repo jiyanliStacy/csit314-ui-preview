@@ -194,10 +194,8 @@ table.details th { position: static; width: 34%; text-transform: none; letter-sp
 /* ================= project cards (search results, home, favourites) */
 .results { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; margin-top: 16px; }
 .result { position: relative; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; overflow: hidden;
-          display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s, border-color .2s; }
-.result:hover { box-shadow: var(--shadow-lift); transform: translateY(-3px); border-color: var(--line-strong); }
-.result .cover { transition: transform .5s cubic-bezier(.16,1,.3,1); }
-.result:hover .cover { transform: scale(1.03); }
+          display: flex; flex-direction: column; transition: box-shadow .2s, border-color .2s; }
+.result:hover { box-shadow: var(--shadow-lift); border-color: var(--line-strong); }
 .result-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 7px; flex: 1; background: #fff; }
 .result h3 { margin: 0; font-size: 1.02em; line-height: 1.3; }
 .result h3 a { color: var(--ink); }
