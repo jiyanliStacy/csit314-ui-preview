@@ -246,12 +246,12 @@ table.details th { position: static; width: 34%; text-transform: none; letter-sp
 .aside-card .stack a:hover { color: var(--brand); text-decoration: none; }
 
 /* ================= designer profile */
-.profile-hero { position: relative; border-radius: var(--radius); overflow: hidden; margin-top: 26px; }
+.profile-hero { position: relative; isolation: isolate; border-radius: var(--radius); overflow: hidden; margin-top: 26px; }   /* isolate: the photo's z-index stays inside the banner */
 .profile-hero .cover { aspect-ratio: auto; height: 190px; }
 .profile-hero .cover-window { left: 62%; width: 9%; height: 66%; top: 12%; }
 .profile-hero .cover-icon { width: 13%; right: 7%; bottom: 14%; }
 .profile-hero .cover-floor { height: 26%; }
-.profile-card { position: relative; margin: -56px 28px 0; display: flex; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
+.profile-card { position: relative; z-index: 2; margin: -56px 28px 0; display: flex; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
 .profile-card h1 { margin: 0 0 4px; }
 .profile-card .who-meta { padding-top: 64px; flex: 1; min-width: 220px; }
 .profile-card .who-meta .eyebrow { margin-bottom: 2px; }
